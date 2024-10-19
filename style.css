@@ -1,0 +1,201 @@
+/* body{
+    background-color: #222438;
+    margin: 0;
+    font-family: Poppins;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+    repeating-linear-gradient(
+        to right,
+        transparent 0 50px, 
+        #fff1 50px 51px
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0 50px, 
+        #fff1 50px 51px
+    );
+    position: relative;
+}
+form{
+    background-color: #eee;
+    width: max-content;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px;
+}
+form input, button{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    cursor: pointer;
+}
+form input::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+form input::-webkit-color-swatch{
+    border-radius: 50%;
+}
+#list textarea{
+    all: unset;
+    color: #d6d6d6;
+}
+#list .note{
+    background-color: #333;
+    width: max-content;
+    border-top: 30px solid #e6b905;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px #0004;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+#list .note span{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 30px;
+    font-family: cursive;
+    font-size: large;
+    padding-right: 10px;
+    cursor: pointer;
+} */
+
+body {
+    background-color: #222438;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+    repeating-linear-gradient(
+        to right,
+        transparent 0 5vw, 
+        #fff1 5vw 5.1vw
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0 5vh, 
+        #fff1 5vh 5.1vh
+    );
+    position: relative;
+}
+
+form {
+    background-color: #eee;
+    width: max-content;
+    padding: 1em;
+    margin: 10px;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form input,
+button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+form input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+form input::-webkit-color-swatch {
+    border-radius: 50%;
+}
+
+#list textarea {
+    all: unset;
+    color: #d6d6d6;
+}
+
+#list .note {
+    background-color: #333;
+    width: auto;
+    max-width: 90vw;
+    border-top: 5vw solid #e6b905;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px #0004;
+    padding: 10px;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+}
+
+#list .note span {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 30px;
+    font-family: cursive;
+    font-size: large;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    form {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input,
+    button {
+        width: 30px;
+        height: 30px;
+        font-size: medium;
+    }
+
+    #list .note {
+        top: 10vh;
+        left: 5vw;
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 8px;
+        gap: 5px;
+    }
+
+    form input,
+    button {
+        width: 25px;
+        height: 25px;
+        font-size: small;
+    }
+
+    #list .note {
+        top: 8vh;
+        left: 5vw;
+        max-width: 90vw;
+        padding: 8px;
+    }
+
+    #list .note span {
+        font-size: medium;
+    }
+}
